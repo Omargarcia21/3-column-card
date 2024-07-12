@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 5%;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    width: 830px;
+    height: 455px;
+}
+.colums {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+.colum1 {
+    width: 100%;
+    height: 455px;
+    background-color: hsl(31, 77%, 52%);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-left:15px ;
+    border-top-left-radius: 2%;
+    border-bottom-left-radius: 2%;
+}
+.colums img {
+    top: 38px;
+    width: 30%;
+    align-self: flex-start;
+}
+.name{
+    font-weight: 400;
+    font-size: 35px;
+    color: hsla(0, 0%, 100%, 0.75);
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+.status {
+    color: hsla(0, 0%, 100%, 0.75);
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 20px;
+}
+.colum1 button {
+    border-radius: 15px;
+    width: 65%;
+    height: 30px;
+    color: hsl(31, 77%, 52%);
+    cursor: pointer;
+    border: none;
+    padding-left: 15px;
+}
+.colum2 {
+    width: 100%;
+    height: 455px;
+    background-color:hsl(184, 100%, 22%) ;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-left:15px ;
+}
+.colum2 button {
+    border-radius: 15px;
+    width: 65%;
+    height: 30px;
+    color: hsl(184, 100%, 22%);
+    cursor: pointer;
+    border: none;
+    padding-left: 15px;
+}
+.colum3 {
+    width: 100%;
+    height: 455px;
+    background-color:hsl(179, 100%, 13%) ;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-left:15px ;
+    border-top-right-radius: 2%;
+    border-bottom-right-radius: 2%;
+}
+.colum3 button {
+    border-radius: 15px;
+    width: 65%;
+    height: 30px;
+    color: hsl(179, 100%, 13%);
+    cursor: pointer;
+    border: none;
+    padding-left: 15px;
+}
+/*         FOOTER       */
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (max-width: 376px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .colums {
+        width: 100%;
+        height: auto;
+        padding-left: 0;
+    }
+    .colum1,.colum2,
+    .colum3 {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+    .colum1{
+        border-top-left-radius: 2%;
+        border-top-right-radius: 2%;
+    }
+    .colum2{
+        border-bottom-left-radius: 2%;
+        border-bottom-right-radius: 2%;
+    }
+    .colum1{
+        order: 1;
+    }
+    .colum2{
+        order: 2;
+    }
+    .colum3{
+        order: 3;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .colums {
+        width: 100%;
+        height: auto;
+        padding-left: 0;
+    }
+    .colum1,.colum2,
+    .colum3 {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+    .colum1{
+        border-top-left-radius: 2%;
+        border-top-right-radius: 2%;
+    }
+    .colum2{
+        border-bottom-left-radius: 2%;
+        border-bottom-right-radius: 2%;
+    }
+    .colum1{
+        order: 1;
+    }
+    .colum2{
+        order: 2;
+    }
+    .colum3{
+        order: 3;
+    }
+}
+
+/* Dispositivos grandes (laptops/desktops, en general 992px y abajo) */
+@media only screen and (max-width: 992px) {
+    /* Estilos para dispositivos grandes */
+}
+
+  /* Dispositivos extra grandes (desktops grandes, en general 1200px y abajo) */
+@media only screen and (max-width: 1200px) {
+    /* Estilos para dispositivos extra grandes */
+}
